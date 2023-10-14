@@ -18,6 +18,7 @@ class UsersController < ApplicationController
   def activities
     @user = User.find(params[:id])
     @activities = Activity.where(user_id: @user)
+    teste 
   end
 
   private
